@@ -1,0 +1,169 @@
+:root {
+ --bg-color: black;
+}
+body{
+  background-color:var(--bg-color);
+  color: green;
+  font-family: 'Dela Gothic One', cursive;
+  font-weight: 200;
+  font-size: medium;
+}
+
+#heading {
+  text-align: center;
+  color: palevioletred;
+  margin-top: 15;
+}
+
+#clock{
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-size: 80px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#image {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+ height: 20%;
+ border-radius: 10px;
+}
+
+#text {
+  text-align: center;
+  color: palevioletred;
+  font-size: large;
+}
+
+/*party time */
+#party {
+  padding: 10px;
+  width: 200px;
+  font-size: large;
+  background-color: pink;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#items-list{
+  text-align: center;
+  list-style-type: none;
+  padding: 10px;
+}
+
+/*todo list */
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none; /* get rid of bullet points on side of list items */
+}
+
+/* common style ends */
+
+/* container */
+.container {
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: palevioletred;
+  font-size: 40px;
+}
+
+/* todo-form */
+
+.todo-form {
+  margin: 40px 0px;
+}
+
+.todo-input {
+  width: 400px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.add-button {
+  background-color: paleturquoise;
+  color:black;
+  width: 80px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+
+/* todo-form style ends */
+
+/* todo-items */
+.todo-items {
+  min-width: 350px;
+}
+
+/* each li with class="item" */
+.item {
+  background-color:black;
+  color: palevioletred;
+  font-family: 'Dela Gothic One', cursive;
+  padding: 10px;
+  font-size: 25px
+}
+
+.item:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.item:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+/* item style end */
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.delete-button {
+  float: right;
+  background-color: black;
+  color: paleturquoise;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 2px 5px;
+  margin-left: 10px;
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
+/* applied when the todo item is checked */
+.checked { 
+  text-decoration: line-through;
+}
+
+/* todo-items style ends */
+
+/* container style ends */
+
+#footer {
+  text-align: center;
+  opacity: 50%;
+  color: aquamarine;
+}

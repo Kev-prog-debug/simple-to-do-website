@@ -1,0 +1,115 @@
+:root{
+  --main-font:'Titillium Web', sans-serif;
+  --styled-font:'WindSong', cursive;
+  --main-color:#BFD4E1;
+}
+body {
+  background-image: url(img/pexels-philippe-donn-1169754.jpg);
+  background-size: contain;
+  color: white;
+  margin: 35px;
+}
+#showcase{
+  border-radius: 20px;
+  backdrop-filter: blur(1px);
+  position: relative;
+  height: 230px;
+  animation-name: showcase;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease-out;
+}
+#weather{
+  position: absolute;
+  height: 100%;
+  margin-left: 5%;
+  font-family: var(--main-font);
+}
+#container {
+  position: absolute;
+  height: 100%;
+  margin-left: 85%;
+  margin-top: 60px;
+  font-family: var(--main-font);
+}
+#iframe {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+#todo{
+  position: relative;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+#userinput {
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: var(--main-font);
+}
+
+#button {
+  background-color:var(--main-color);
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+#list {
+  display: block;
+  text-align: center;
+  list-style-type: none;
+}
+.item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 1rem;
+  font-size: 25px;
+  font-family: var(--main-font);
+  padding: 10px;
+  background-color: var(--main-color);
+  color:black;
+  opacity: 80%;
+  border-radius: 5px;
+}
+.item:hover {
+  opacity: 100%;
+}
+
+#quote {
+  position: relative;
+  margin-top: 10px;
+  backdrop-filter: blur(2px);
+  text-align: center;
+  padding: 20px;
+  font-family: var(--main-font);
+  animation: quotes;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+#calender{
+  position:sticky;
+  z-index: 1000;
+  margin-left: -30px;
+  top: 0%;
+}
+.demo {
+  margin-top: 500px;
+  text-align: center;
+}
+/*animation*/
+@keyframes quotes {
+  0% {left: -1000px;}
+  100% {left: 12px;}
+}
+
+@keyframes showcase {
+  0% {opacity:0%;}
+  50% {opacity: 25%;}
+  75% {opacity: 50%;}
+  100% {top: 100%;}
+}
